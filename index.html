@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Madison Electric</title>
+<style>
+      #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+</head>
+
+<body>
+  <div id="header">
+    <img src="logo.png" />
+    <ul id="nav">
+      <li>Home</li>
+      <li>About Us
+        <ul>
+          <li>Certifications & Awards</li>
+          <li>Mission & Vision</li>
+          <li>History</li>
+        </ul>
+      </li>
+      <li>Locations</li>
+      <li>Products</li>
+      <li>Contact Us</li>
+      <li>Online Store</li>
+    </ul>
+    <!--end of navigation-->
+  </div>
+  <!-- end of header -->
+  <div>
+    <img src="#" alt="images of warehouse" />
+  </div>
+  <div id="map"></div>
+
+</body>
+<script>
+  function initMap() {
+
+    var uluru = {lat: 42.3751887, lng: -83.6147356};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 10,
+      center: uluru
+    });
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map
+    });
+  }
+</script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBB9IAIoaYifVFG1HtfH94zVV96S4gvb4s&callback=initMap">
+</script>
+</html>
