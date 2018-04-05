@@ -39,16 +39,16 @@
     // MySQL settings. You need to get this info from your web host.
     // 4.
     // Name of the database
-    define( 'K_DB_NAME', 'database_name' );
+    define( 'K_DB_NAME', 'madisonTest' );
     // 5.
     // Database username
-    define( 'K_DB_USER', 'database_username' );
+    define( 'K_DB_USER', 'root' );
     // 6.
     // Database password
-    define( 'K_DB_PASSWORD', 'database_password' );
+    define( 'K_DB_PASSWORD', 'madison' );
     // 7.
     // MySQL hostname (it will usually be 'localhost')
-    define( 'K_DB_HOST', 'localhost' );
+    define( 'K_DB_HOST', '127.0.0.1' );
     // 7b.
     // Needed only if multiple instances of this CMS are to be installed in the same database
     // (please use only alphanumeric characters or underscore (NO hyphen))
